@@ -6,7 +6,7 @@ public class MyApplication {
         for (int i = 0; i < 10; i++) {
             points[i] = new Point(Math.random() * 10, Math.random() * 10);
             public static void main(String[] args) throws FileNotFoundException {
-                File file = new File("C:\\Users\\alish\\IdeaProjects\\alisher2305d\\src\\source");
+                File file = new File("C:\\Users\\alish\\IdeaProjects\\alisher2305d\\src\\source.text");
                 Scanner sc = new Scanner(file);
                 Shape shape = new Shape();
                 Point firstPoint = null;
