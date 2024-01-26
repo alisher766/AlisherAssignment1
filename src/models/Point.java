@@ -5,10 +5,6 @@ public class Point {
         this.x = x;
         this.y = y;
     }
-    public double distanceTo(Point destination) {
-        double deltaX = destination.x - this.x;
-        double deltaY = destination.y - this.y;
-        return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
         public double distance(Point dest) {
             double dx = this.x - dest.x;
             double dy = this.y - dest.y;
