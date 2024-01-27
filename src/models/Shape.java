@@ -1,16 +1,20 @@
 import java.util.ArrayList;
 public class Shape {
-    private ArrayList<Point> points = new ArrayList<>();
+    private Point[] points;
+    private int size;
 
     public Shape(Point[] points) {
-        for (Point point : points) {
-            this.points.add(point);
+        this.points = new Point[points.length];
+        for (int i = 0; i < points.length; i++) {
+            this.points[i] = points[i];
         }
+        size = points.length;
     }
 
     public void addPoint(Point point) {
-        points.add(point);
-    }
+        if (size < points.length) {
+            points[size] = point;
+            size++;
 }
 public double perimeter() {
             public double calculatePerimeter() {
